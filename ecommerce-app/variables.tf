@@ -4,9 +4,9 @@ variable "application_name" {
   default     = "hcp-ddog-ecommerce-app"
 }
 variable "aws_region" {
-  type    = string
-  default = "Provide here the AWS region name."
-  default = "eu-central-1"
+  type        = string
+  description = "Provide here the AWS region name."
+  default     = "eu-central-1"
 }
 
 variable "datadog_api_key" {
@@ -28,7 +28,6 @@ variable "cluster_workspace_name" {
 variable "organization_name" {
   description = "Provide here TFC organization name"
   type        = string
-  default     = 
 }
 
 variable "DD_CLIENT_TOKEN" {
