@@ -1,9 +1,12 @@
 variable "application_name" {
   type        = string
-  description = "Application Name"
+  description = "Provide here the application name."
+  default     = "hcp-ddog-ecommerce-app"
 }
 variable "aws_region" {
-  type = string
+  type    = string
+  default = "Provide here the AWS region name."
+  default = "eu-central-1"
 }
 
 variable "datadog_api_key" {
@@ -16,10 +19,17 @@ variable "datadog_app_key" {
   description = "Datadog Application Key"
 }
 
-variable "org_name" {
-  type = string
+variable "cluster_workspace_name" {
+  description = "Provide here the eks cluster workspace name."
+  type        = string
+  default     = "eks-cluster"
 }
 
+variable "organization_name" {
+  description = "Provide here TFC organization name"
+  type        = string
+  default     = 
+}
 
 variable "DD_CLIENT_TOKEN" {
   type = string

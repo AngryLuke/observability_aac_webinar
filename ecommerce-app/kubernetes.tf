@@ -2,9 +2,9 @@ data "terraform_remote_state" "eks" {
   backend = "remote"
 
   config = {
-    organization = var.org_name
+    organization = var.organization_name
     workspaces = {
-      name = "eks-cluster"
+      name = var.cluster_workspace_name
     }
   }
 }
